@@ -27,7 +27,14 @@ namespace Exercise2
            
 
         private int n;
-        public void read()
+        private object a;
+
+        public object GetA()
+        {
+            return a;
+        }
+
+        public void read(object a)
         {
 
             while (true)
@@ -45,6 +52,13 @@ namespace Exercise2
             Console.WriteLine("------------------------");
             Console.WriteLine(" Masukkan Elemen Array");
             Console.WriteLine("------------------------");
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                a[i] = Int32.Parse(s1);
+            }
         }
     }
 }
