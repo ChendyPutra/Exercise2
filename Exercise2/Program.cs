@@ -8,8 +8,13 @@ namespace Exercise2
 {
     internal class Program
     {
-        static void Main(string[] args)
+        
+        static void Main(int[] arr, int i, int j)
         {
+            int temp = arr[i];
+            arr[j] = arr[i - 1];
+            arr[j + 1] = temp;
+
         }
     }
 }
