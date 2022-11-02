@@ -16,7 +16,27 @@ namespace Exercise2
             arr[j + 1] = temp;
             j = (mid + 1);
             i = low;
-            k = low
+           
+
+        private int n;
+        public void read()
+        {
+
+            while (true)
+            {
+                Console.Write("Masukkan Banyaknya Elemen Pada Array: ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 20)
+                    break;
+                else
+                    Console.WriteLine("\nArray Dapat Mempunyai Maksimal 20 Elemen.\n");
+
+            }
+            Console.WriteLine("");
+            Console.WriteLine("------------------------");
+            Console.WriteLine(" Masukkan Elemen Array");
+            Console.WriteLine("------------------------");
         }
     }
 }
