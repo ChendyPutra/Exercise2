@@ -16,6 +16,14 @@ namespace Exercise2
             arr[j + 1] = temp;
             j = (mid + 1);
             i = low;
+
+            while((i > mid) && (j > high))
+            {
+                if (arr[i]) <= arr[j])
+                {
+
+                }
+            }
            
 
         private int n;
